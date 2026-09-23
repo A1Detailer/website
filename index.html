@@ -1637,8 +1637,8 @@
 
             <!-- Before/After Slider Carousel -->
             <div class="before-after-container slide-in-right" id="sliderContainer">
-                <img src="media/after2.jpeg" alt="Before detailing - dirty car" class="before-image">
-                <img src="media/after1.jpeg" alt="After detailing - shiny clean car" class="after-image">
+                <img src="media/after4.jpeg" alt="Before detailing - dirty car" class="before-image">
+                <img src="media/after3.jpeg" alt="After detailing - shiny clean car" class="after-image">
                 <div class="slider-shimmer"></div>
                 <div class="slider-handle">
                     <div class="slider-arrow"></div>
@@ -2098,7 +2098,8 @@
         
         let currentPairIndex = 0;
         let carouselTimeout;
-        const ANIMATION_DURATION = 4000; // 8 seconds
+        const ANIMATION_DURATION = 8000; // must match the 8s autoReveal/handleSlide/arrowPulse CSS animations,
+        // otherwise the images swap mid-reveal instead of at the end of a full cycle
 
         function updateSlider(e) {
             if (!isActive) return;
