@@ -2,7 +2,7 @@ backend:
   name: github
   repo: A1Detailer/website
   branch: main
-  base_url: https://REPLACE-WITH-YOUR-WORKER-URL.workers.dev
+  base_url: https://a1detailer-cms-auth.a1detailer.workers.dev
   auth_endpoint: auth
 
 media_folder: "media"
