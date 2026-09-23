@@ -384,6 +384,14 @@
         }
 
         .after-image {
+            z-index: 1;
+        }
+
+        /* Painted above .after-image (explicit z-index, not DOM order) and clipped to
+           its left portion, so Before shows on the left and After shows through on the
+           right where this clip cuts it away — matching the Before/After labels below. */
+        .before-image {
+            z-index: 2;
             clip-path: polygon(0 0, var(--clip-position, 50%) 0, var(--clip-position, 50%) 100%, 0 100%);
             transition: clip-path 0.05s ease-out;
             animation: autoReveal 8s ease-in-out infinite;
@@ -2150,7 +2158,7 @@
             container.style.setProperty('--clip-position', '50%');
             
             // Restart animations smoothly
-            afterImage.style.animation = 'autoReveal 8s ease-in-out infinite';
+            beforeImage.style.animation = 'autoReveal 8s ease-in-out infinite';
             handle.style.animation = 'handleSlide 8s ease-in-out infinite';
             arrow.style.animation = 'arrowPulse 8s ease-in-out infinite';
             
@@ -2160,7 +2168,7 @@
 
         container.addEventListener('mousedown', () => {
             isActive = true;
-            afterImage.style.animation = 'none';
+            beforeImage.style.animation = 'none';
             handle.style.animation = 'none';
             arrow.style.animation = 'none';
             clearTimeout(carouselTimeout);
@@ -2168,7 +2176,7 @@
 
         container.addEventListener('touchstart', () => {
             isActive = true;
-            afterImage.style.animation = 'none';
+            beforeImage.style.animation = 'none';
             handle.style.animation = 'none';
             arrow.style.animation = 'none';
             clearTimeout(carouselTimeout);
@@ -2178,7 +2186,7 @@
             isActive = false;
             setTimeout(() => {
                 if (!isActive) {
-                    afterImage.style.animation = 'autoReveal 8s ease-in-out infinite';
+                    beforeImage.style.animation = 'autoReveal 8s ease-in-out infinite';
                     handle.style.animation = 'handleSlide 8s ease-in-out infinite';
                     arrow.style.animation = 'arrowPulse 8s ease-in-out infinite';
                     clearTimeout(carouselTimeout);
@@ -2191,7 +2199,7 @@
             isActive = false;
             setTimeout(() => {
                 if (!isActive) {
-                    afterImage.style.animation = 'autoReveal 8s ease-in-out infinite';
+                    beforeImage.style.animation = 'autoReveal 8s ease-in-out infinite';
                     handle.style.animation = 'handleSlide 8s ease-in-out infinite';
                     arrow.style.animation = 'arrowPulse 8s ease-in-out infinite';
                     clearTimeout(carouselTimeout);
@@ -2205,7 +2213,7 @@
 
         // Initialize slider position and start carousel
         container.style.setProperty('--clip-position', '50%');
-        afterImage.style.animation = 'autoReveal 8s ease-in-out infinite';
+        beforeImage.style.animation = 'autoReveal 8s ease-in-out infinite';
         handle.style.animation = 'handleSlide 8s ease-in-out infinite';
         arrow.style.animation = 'arrowPulse 8s ease-in-out infinite';
         carouselTimeout = setTimeout(switchToNextImage, ANIMATION_DURATION);
