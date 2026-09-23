@@ -1599,7 +1599,7 @@
             layout: "month_view"
         });
     </script>
-<script type='text/javascript' src='https://api.netlify.com/MgeWppzE3LEO32Mmg4MWzVJDvCgmHDkpnu5eSRJdIPgpmNdYm1znIOwpPC7Z0KiLuTUtVgbxFqZ6b8GC6Q7ZsczpbjJKzj0mjsBpqx4cDuHG6qN4dIg2wjb_lQX-5LvrdlyU18OmELpYrJLH9irF4MmAEBCC7U-Rt9lroaWgKxIrPywMh-WS7EWPA9cTEpLUVWHgzABDfedCsfiBypCxmJDhno_QBls7U-aMjAbrY8B-2xwBIaGQOuc4pPw9E92NIsPimzHh8RjZkTwz2tUyx_zlzd6GQYLs5cThPaVdwQZ-uLzjzoJ_sUUjob8k9zh81naCsciBxk4336RHyEstO972T_HBZHNXdZ4y9OXz7VgPb1GeW6KKrJXlI8_fTUngxHSVmQfeR8wgTRD4p9M3hmZmx3gWLopa0Uwsfcp024U-Whegr6Vss5jBD4QCYrY5kC_5lubZ0CvrbuQhGFBcWzn8KvQjl1FaMe57SNQfylad_2HZbYwSwEJ4rzttSryuSRnRc-PXin6kSAmiKAqI'></script></head>
+</head>
 <body>
     <!-- Navigation -->
     <nav>
@@ -1615,7 +1615,7 @@
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="tel:919-332-1936" class="nav-cta-button">📞 Call or Text</a></li>
+            <li><a href="tel:919-332-1936" data-cms-tel="contact.phone" class="nav-cta-button">📞 Call or Text</a></li>
         </ul>
         <button class="cta-button" data-cal-link="a1detailer">Book Now</button>
     </nav>
@@ -1624,13 +1624,13 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text slide-in-left">
-                <div class="hero-badge">📍 Mobile Detailing &middot; Raleigh, Durham &amp; Cary</div>
-                <h1>Luxury Mobile Detailing at Your Doorstep</h1>
-                <p class="hero-subhead">We Bring Showroom-Quality Shine to Your Driveway</p>
-                <p>Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas.</p>
+                <div class="hero-badge" data-cms="hero.badge">📍 Mobile Detailing &middot; Raleigh, Durham &amp; Cary</div>
+                <h1 data-cms="hero.headline">Luxury Mobile Detailing at Your Doorstep</h1>
+                <p class="hero-subhead" data-cms="hero.subhead">We Bring Showroom-Quality Shine to Your Driveway</p>
+                <p data-cms="hero.paragraph">Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas.</p>
                 <div class="hero-buttons">
                     <button class="cta-button" data-cal-link="a1detailer">Book an Appointment</button>
-                    <a href="tel:919-332-1936" class="cta-button-outlined" style="text-decoration: none; display: inline-block;">📞 Call or Text</a>
+                    <a href="tel:919-332-1936" data-cms-tel="contact.phone" class="cta-button-outlined" style="text-decoration: none; display: inline-block;">📞 Call or Text</a>
                     <button class="cta-button-outlined" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'})">View Packages</button>
                 </div>
             </div>
@@ -1669,15 +1669,15 @@
         <div class="banner-content">
             <div class="banner-text">
                 <span class="banner-star"></span>
-                <span>Book With Us Today</span>
+                <span data-cms="bookingBanner.text">Book With Us Today</span>
                 <span class="banner-star"></span>
-                <span>Book With Us Today</span>
+                <span data-cms="bookingBanner.text">Book With Us Today</span>
                 <span class="banner-star"></span>
-                <span>Book With Us Today</span>
+                <span data-cms="bookingBanner.text">Book With Us Today</span>
                 <span class="banner-star"></span>
-                <span>Book With Us Today</span>
+                <span data-cms="bookingBanner.text">Book With Us Today</span>
                 <span class="banner-star"></span>
-                <span>Book With Us Today</span>
+                <span data-cms="bookingBanner.text">Book With Us Today</span>
                 <span class="banner-star"></span>
             </div>
         </div>
@@ -1694,17 +1694,17 @@
             <div class="packages-grid">
                 <!-- Basic Package -->
                 <div class="package-card scale-in stagger-1">
-                    <span class="package-badge">Entry Level</span>
-                    <h3 class="package-name">Essential Detail</h3>
-                    <p class="package-description">Perfect for regular maintenance and keeping your car fresh.</p>
-                    
+                    <span class="package-badge" data-cms="packages.package1.badge">Entry Level</span>
+                    <h3 class="package-name" data-cms="packages.package1.name">Bronze Detail</h3>
+                    <p class="package-description" data-cms="packages.package1.description">Perfect for regular maintenance and keeping your car fresh.</p>
+
                     <div class="package-pricing">
-                        <div class="price">$149+</div>
+                        <div class="price" data-cms="packages.package1.price">$149+</div>
                         <div class="price-label">Starting price</div>
-                        <div class="price-note">Coupes/Sedans $149<br>2-Row SUV/Trucks $179<br>3-Row SUV/Trucks $199</div>
+                        <div class="price-note" data-cms-html="packages.package1.priceNote">Coupes/Sedans $149<br>2-Row SUV/Trucks $179<br>3-Row SUV/Trucks $199</div>
                     </div>
 
-                    <ul class="features-list">
+                    <ul class="features-list" data-cms-list="packages.package1.features">
                         <li>Hand wash & dry</li>
 						<li>Wheel & Tires</li>
                         <li>Tire Shine</li>
@@ -1713,24 +1713,24 @@
 						<li>Interior Wipe Down</li>
                         <li>1-2 hours</li>
                     </ul>
-                    
-                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/essential-detail">Book Now &rarr;</button>
+
+                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/essential-detail" data-cms-cal="packages.package1.calLink">Book Now &rarr;</button>
                 </div>
 
                 <!-- Standard Package -->
                 <div class="package-card scale-in stagger-2">
-                    <span class="package-badge">Most Popular</span>
-                    <h3 class="package-name">Complete Detail</h3>
-                    <p class="package-description">Our most popular choice for thorough cleaning and protection.</p>
-                    
+                    <span class="package-badge" data-cms="packages.package2.badge">Most Popular</span>
+                    <h3 class="package-name" data-cms="packages.package2.name">Silver Detail</h3>
+                    <p class="package-description" data-cms="packages.package2.description">Our most popular choice for thorough cleaning and protection.</p>
+
                     <div class="package-pricing">
-                        <div class="price">$199+</div>
+                        <div class="price" data-cms="packages.package2.price">$199+</div>
                         <div class="price-label">Starting price</div>
-                        <div class="price-note">Coupes/Sedans $199<br>2-Row SUV/Trucks $249<br>3-Row SUV/Trucks $299</div>
+                        <div class="price-note" data-cms-html="packages.package2.priceNote">Coupes/Sedans $199<br>2-Row SUV/Trucks $249<br>3-Row SUV/Trucks $299</div>
                     </div>
 
-                    <ul class="features-list">
-                        <li>Everything in Essential</li>
+                    <ul class="features-list" data-cms-list="packages.package2.features">
+                        <li>Everything in Bronze</li>
                         <li>Thorough Vacuuming</li>
                         <li>Interior Panels, Consoles, Dash, Vents</li>
                         <li>De Bug</li>
@@ -1739,24 +1739,24 @@
 						<li>Spray Wax</li>
                         <li>2-3 hours</li>
                     </ul>
-                    
-                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/complete-detail">Book Now &rarr;</button>
+
+                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/complete-detail" data-cms-cal="packages.package2.calLink">Book Now &rarr;</button>
                 </div>
 
                 <!-- Elite Package -->
                 <div class="package-card scale-in stagger-3">
-                    <span class="package-badge">Premium</span>
-                    <h3 class="package-name">Elite Protection</h3>
-                    <p class="package-description">The ultimate in car care with advanced protection coatings.</p>
-                    
+                    <span class="package-badge" data-cms="packages.package3.badge">Premium</span>
+                    <h3 class="package-name" data-cms="packages.package3.name">Elite Protection</h3>
+                    <p class="package-description" data-cms="packages.package3.description">The ultimate in car care with advanced protection coatings.</p>
+
                     <div class="package-pricing">
-                        <div class="price">$299+</div>
+                        <div class="price" data-cms="packages.package3.price">$299+</div>
                         <div class="price-label">Starting price</div>
-                        <div class="price-note">Coupes/Sedans $299<br>2-Row SUV/Trucks $349<br>3-Row SUV/Trucks $399</div>
+                        <div class="price-note" data-cms-html="packages.package3.priceNote">Coupes/Sedans $299<br>2-Row SUV/Trucks $349<br>3-Row SUV/Trucks $399</div>
                     </div>
 
-                    <ul class="features-list">
-                        <li>Everything in Complete</li>
+                    <ul class="features-list" data-cms-list="packages.package3.features">
+                        <li>Everything in Silver</li>
                         <li>Elite Tire Gel</li>
                         <li>Interior Panel Shine</li>
                         <li>Leather Conditioning</li>
@@ -1765,8 +1765,8 @@
 						<li>Carpet Shampoo</li>
                         <li>3-5 hours</li>
                     </ul>
-                    
-                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/elite-protection">Book Now &rarr;</button>
+
+                    <button class="cta-button" style="width: 100%;" data-cal-link="a1detailer/elite-protection" data-cms-cal="packages.package3.calLink">Book Now &rarr;</button>
                 </div>
             </div>
 
@@ -1782,25 +1782,25 @@
     <section class="why-choose" id="why">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="difference-eyebrow">What Sets Us Apart</span>
-                <h2>The A1 Detailing Difference</h2>
-                <p>Three reasons Raleigh, Durham & Cary trust us with their vehicles</p>
+                <span class="difference-eyebrow" data-cms="whyChoose.eyebrow">What Sets Us Apart</span>
+                <h2 data-cms="whyChoose.heading">The A1 Detailing Difference</h2>
+                <p data-cms="whyChoose.subtext">Three reasons Raleigh, Durham & Cary trust us with their vehicles</p>
             </div>
 
             <div class="benefits-grid">
                 <div class="benefit-card scale-in stagger-1">
-                    <h3>Convenience You Can Count On</h3>
-                    <p>We come to your home or workplace and bring everything with us — our own water tanks, generators, and every tool needed. No need to drive anywhere, and no need to provide electricity or water.</p>
+                    <h3 data-cms="whyChoose.benefit1.title">Convenience You Can Count On</h3>
+                    <p data-cms="whyChoose.benefit1.text">We come to your home or workplace and bring everything with us — our own water tanks, generators, and every tool needed. No need to drive anywhere, and no need to provide electricity or water.</p>
                 </div>
 
                 <div class="benefit-card scale-in stagger-2">
-                    <h3>Quality You Can See</h3>
-                    <p>We use only the highest-quality detailing products and professional-grade equipment, applied by trained technicians who handle every vehicle with precision, care, and expertise.</p>
+                    <h3 data-cms="whyChoose.benefit2.title">Quality You Can See</h3>
+                    <p data-cms="whyChoose.benefit2.text">We use only the highest-quality detailing products and professional-grade equipment, applied by trained technicians who handle every vehicle with precision, care, and expertise.</p>
                 </div>
 
                 <div class="benefit-card scale-in stagger-3">
-                    <h3>Trust & Transparency</h3>
-                    <p>Highly rated by our customers for reliability and outstanding results, with clear, upfront pricing and no hidden fees — you know exactly what to expect before booking.</p>
+                    <h3 data-cms="whyChoose.benefit3.title">Trust & Transparency</h3>
+                    <p data-cms="whyChoose.benefit3.text">Highly rated by our customers for reliability and outstanding results, with clear, upfront pricing and no hidden fees — you know exactly what to expect before booking.</p>
                 </div>
             </div>
         </div>
@@ -1810,33 +1810,33 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>How It Works</h2>
-                <p>Simple steps to get your car looking brand new</p>
+                <h2 data-cms="howItWorks.heading">How It Works</h2>
+                <p data-cms="howItWorks.subtext">Simple steps to get your car looking brand new</p>
             </div>
 
             <div class="steps-grid">
                 <div class="step fade-in stagger-1">
                     <div class="step-number">1</div>
-                    <h3>Book Appointment</h3>
-                    <p>Select your date, time, and preferred service package through our calendar. Choose what works best for you.</p>
+                    <h3 data-cms="howItWorks.step1.title">Book Appointment</h3>
+                    <p data-cms="howItWorks.step1.text">Select your date, time, and preferred service package through our calendar. Choose what works best for you.</p>
                 </div>
 
                 <div class="step fade-in stagger-2">
                     <div class="step-number">2</div>
-                    <h3>Confirm Details</h3>
-                    <p>Provide your vehicle details and service location. We'll confirm all the details to ensure perfect service.</p>
+                    <h3 data-cms="howItWorks.step2.title">Confirm Details</h3>
+                    <p data-cms="howItWorks.step2.text">Provide your vehicle details and service location. We'll confirm all the details to ensure perfect service.</p>
                 </div>
 
                 <div class="step fade-in stagger-3">
                     <div class="step-number">3</div>
-                    <h3>We Arrive Ready</h3>
-                    <p>Our team arrives at your location fully equipped. We bring everything needed—no prep work required from you.</p>
+                    <h3 data-cms="howItWorks.step3.title">We Arrive Ready</h3>
+                    <p data-cms="howItWorks.step3.text">Our team arrives at your location fully equipped. We bring everything needed—no prep work required from you.</p>
                 </div>
 
                 <div class="step fade-in stagger-4">
                     <div class="step-number">4</div>
-                    <h3>Enjoy Results</h3>
-                    <p>Sit back and relax while we transform your vehicle. When we're done, your car will look absolutely stunning.</p>
+                    <h3 data-cms="howItWorks.step4.title">Enjoy Results</h3>
+                    <p data-cms="howItWorks.step4.text">Sit back and relax while we transform your vehicle. When we're done, your car will look absolutely stunning.</p>
                 </div>
             </div>
 
@@ -1851,32 +1851,32 @@
     <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header fade-in">
-                <span class="difference-eyebrow">Recent Work</span>
-                <h2>See The Transformation</h2>
-                <p>A few before &amp; afters from vehicles we've detailed around Raleigh, Durham &amp; Cary</p>
+                <span class="difference-eyebrow" data-cms="gallery.eyebrow">Recent Work</span>
+                <h2 data-cms="gallery.heading">See The Transformation</h2>
+                <p data-cms="gallery.subtext">A few before &amp; afters from vehicles we've detailed around Raleigh, Durham &amp; Cary</p>
             </div>
 
             <div class="gallery-grid">
-                <a href="https://instagram.com/a1autodetailer" target="_blank" rel="noopener" class="gallery-item scale-in stagger-1">
-                    <img src="media/after1.jpeg" alt="A1 Detailing before and after result 1" loading="lazy">
+                <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" rel="noopener" class="gallery-item scale-in stagger-1">
+                    <img src="media/after1.jpeg" alt="A1 Detailing before and after result 1" data-cms-src="gallery.image1.src" data-cms-alt="gallery.image1.alt" loading="lazy">
                     <div class="gallery-overlay"><span>📷 @a1autodetailer</span></div>
                 </a>
-                <a href="https://instagram.com/a1autodetailer" target="_blank" rel="noopener" class="gallery-item scale-in stagger-2">
-                    <img src="media/after2.jpeg" alt="A1 Detailing before and after result 2" loading="lazy">
+                <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" rel="noopener" class="gallery-item scale-in stagger-2">
+                    <img src="media/after2.jpeg" alt="A1 Detailing before and after result 2" data-cms-src="gallery.image2.src" data-cms-alt="gallery.image2.alt" loading="lazy">
                     <div class="gallery-overlay"><span>📷 @a1autodetailer</span></div>
                 </a>
-                <a href="https://instagram.com/a1autodetailer" target="_blank" rel="noopener" class="gallery-item scale-in stagger-3">
-                    <img src="media/after3.jpeg" alt="A1 Detailing before and after result 3" loading="lazy">
+                <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" rel="noopener" class="gallery-item scale-in stagger-3">
+                    <img src="media/after3.jpeg" alt="A1 Detailing before and after result 3" data-cms-src="gallery.image3.src" data-cms-alt="gallery.image3.alt" loading="lazy">
                     <div class="gallery-overlay"><span>📷 @a1autodetailer</span></div>
                 </a>
-                <a href="https://instagram.com/a1autodetailer" target="_blank" rel="noopener" class="gallery-item scale-in stagger-4">
-                    <img src="media/after4.jpeg" alt="A1 Detailing before and after result 4" loading="lazy">
+                <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" rel="noopener" class="gallery-item scale-in stagger-4">
+                    <img src="media/after4.jpeg" alt="A1 Detailing before and after result 4" data-cms-src="gallery.image4.src" data-cms-alt="gallery.image4.alt" loading="lazy">
                     <div class="gallery-overlay"><span>📷 @a1autodetailer</span></div>
                 </a>
             </div>
 
             <div class="gallery-cta">
-                <a href="https://instagram.com/a1autodetailer" target="_blank" rel="noopener">Follow @a1autodetailer on Instagram &rarr;</a>
+                <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" rel="noopener">Follow @a1autodetailer on Instagram &rarr;</a>
             </div>
         </div>
     </section>
@@ -1885,11 +1885,11 @@
     <section class="reviews" id="reviews">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>What Our Clients Say</h2>
-                <p>Real reviews from satisfied customers</p>
+                <h2 data-cms="reviews.heading">What Our Clients Say</h2>
+                <p data-cms="reviews.subtext">Real reviews from satisfied customers</p>
             </div>
 
-            <div class="reviews-grid">
+            <div class="reviews-grid" data-cms-reviews="reviews.list">
                 <div class="review-card scale-in stagger-1">
                     <div class="stars">★★★★★</div>
                     <p class="review-text">"Best detailing! A1 was reliable, thorough, and fast. I didn't even have to leave my house! 10/10 recommend. Will use them every time!"</p>
@@ -1919,19 +1919,19 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>A1 Auto Detailing</h3>
-                <p>Professional mobile detailing serving Raleigh, Durham, Cary, Apex, Wake Forest, and surrounding areas. We bring luxury detailing to your doorstep.</p>
+                <p data-cms="contact.footerBlurb">Professional mobile detailing serving Raleigh, Durham, Cary, Apex, Wake Forest, and surrounding areas. We bring luxury detailing to your doorstep.</p>
                 <div class="social-links">
-                    <a href="https://instagram.com/a1autodetailer" target="_blank" title="Instagram">📷</a>
-                    <a href="tel:919-332-1936" title="Call us">☎️</a>
+                    <a href="https://instagram.com/a1autodetailer" data-cms-href="contact.instagramUrl" target="_blank" title="Instagram">📷</a>
+                    <a href="tel:919-332-1936" data-cms-tel="contact.phone" title="Call us">☎️</a>
                 </div>
             </div>
 
             <div class="footer-section">
                 <h3>Services</h3>
                 <ul class="footer-links">
-                    <li><a href="https://cal.com/a1detailer/essential-detail" target="_blank" rel="noopener" data-cal-link="a1detailer/essential-detail">Essential Detail</a></li>
-                    <li><a href="https://cal.com/a1detailer/complete-detail" target="_blank" rel="noopener" data-cal-link="a1detailer/complete-detail">Complete Detail</a></li>
-                    <li><a href="https://cal.com/a1detailer/elite-protection" target="_blank" rel="noopener" data-cal-link="a1detailer/elite-protection">Elite Protection</a></li>
+                    <li><a href="https://cal.com/a1detailer/essential-detail" target="_blank" rel="noopener" data-cal-link="a1detailer/essential-detail" data-cms="packages.package1.name" data-cms-cal="packages.package1.calLink">Bronze Detail</a></li>
+                    <li><a href="https://cal.com/a1detailer/complete-detail" target="_blank" rel="noopener" data-cal-link="a1detailer/complete-detail" data-cms="packages.package2.name" data-cms-cal="packages.package2.calLink">Silver Detail</a></li>
+                    <li><a href="https://cal.com/a1detailer/elite-protection" target="_blank" rel="noopener" data-cal-link="a1detailer/elite-protection" data-cms="packages.package3.name" data-cms-cal="packages.package3.calLink">Elite Protection</a></li>
                     <li><a href="https://cal.com/a1detailer" target="_blank" rel="noopener" data-cal-link="a1detailer">View All</a></li>
                 </ul>
             </div>
@@ -1941,24 +1941,119 @@
                 <ul class="footer-links">
                     <li><a href="#why">Why Choose Us</a></li>
                     <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="tel:919-332-1936">Call or Text</a></li>
+                    <li><a href="tel:919-332-1936" data-cms-tel="contact.phone">Call or Text</a></li>
                     <li><a href="https://cal.com/a1detailer" target="_blank" rel="noopener" data-cal-link="a1detailer">Book Now</a></li>
                 </ul>
             </div>
 
             <div class="footer-section">
                 <h3>Get In Touch</h3>
-                <p>📞 <a href="tel:919-332-1936" style="color: var(--gold);">919-332-1936</a></p>
-                <p style="margin-top: 1rem;">Service Areas: Raleigh, Durham, Cary, Apex, Wake Forest and surrounding areas.</p>
+                <p>📞 <a href="tel:919-332-1936" data-cms-tel="contact.phone" data-cms="contact.phone" style="color: var(--gold);">919-332-1936</a></p>
+                <p style="margin-top: 1rem;" data-cms="contact.serviceAreas">Service Areas: Raleigh, Durham, Cary, Apex, Wake Forest and surrounding areas.</p>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 A1 Auto Detailing. All rights reserved. | Premium Mobile Detailing Services</p>
+            <p data-cms="contact.copyrightText">&copy; 2026 A1 Auto Detailing. All rights reserved. | Premium Mobile Detailing Services</p>
         </div>
     </footer>
 
     <script>
+        // Content overlay — loads editable homepage content from content/home.json
+        // (edited via the /admin CMS) and applies it over the static HTML below,
+        // which stays in place as the fallback if the fetch fails or is slow.
+        (function () {
+            function getPath(obj, path) {
+                return path.split('.').reduce((val, key) => (val == null ? undefined : val[key]), obj);
+            }
+
+            function buildReviewCard(review, index) {
+                const card = document.createElement('div');
+                card.className = 'review-card scale-in stagger-' + ((index % 6) + 1) + ' animate';
+                const stars = document.createElement('div');
+                stars.className = 'stars';
+                stars.textContent = '★★★★★'.slice(0, Math.max(0, Math.min(5, review.stars || 5)));
+                const text = document.createElement('p');
+                text.className = 'review-text';
+                text.textContent = review.text || '';
+                const name = document.createElement('div');
+                name.className = 'reviewer-name';
+                name.textContent = review.name || '';
+                const source = document.createElement('div');
+                source.className = 'review-source';
+                source.textContent = review.source || '';
+                card.append(stars, text, name, source);
+                return card;
+            }
+
+            fetch('content/home.json')
+                .then(res => (res.ok ? res.json() : Promise.reject(res.status)))
+                .then(data => {
+                    document.querySelectorAll('[data-cms]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms'));
+                        if (value != null) el.textContent = value;
+                    });
+
+                    document.querySelectorAll('[data-cms-html]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-html'));
+                        if (value != null) el.innerHTML = value;
+                    });
+
+                    document.querySelectorAll('[data-cms-src]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-src'));
+                        if (value != null) el.src = value;
+                    });
+
+                    document.querySelectorAll('[data-cms-alt]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-alt'));
+                        if (value != null) el.alt = value;
+                    });
+
+                    document.querySelectorAll('[data-cms-tel]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-tel'));
+                        if (value != null) el.href = 'tel:' + value;
+                    });
+
+                    document.querySelectorAll('[data-cms-href]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-href'));
+                        if (value != null) el.href = value;
+                    });
+
+                    document.querySelectorAll('[data-cms-cal]').forEach(el => {
+                        const value = getPath(data, el.getAttribute('data-cms-cal'));
+                        if (value != null) {
+                            el.setAttribute('data-cal-link', value);
+                            if (el.hasAttribute('href') && el.getAttribute('href').indexOf('https://cal.com/') === 0) {
+                                el.href = 'https://cal.com/' + value;
+                            }
+                        }
+                    });
+
+                    document.querySelectorAll('[data-cms-list]').forEach(el => {
+                        const items = getPath(data, el.getAttribute('data-cms-list'));
+                        if (Array.isArray(items)) {
+                            el.innerHTML = '';
+                            items.forEach(item => {
+                                const li = document.createElement('li');
+                                li.textContent = item;
+                                el.appendChild(li);
+                            });
+                        }
+                    });
+
+                    document.querySelectorAll('[data-cms-reviews]').forEach(el => {
+                        const reviews = getPath(data, el.getAttribute('data-cms-reviews'));
+                        if (Array.isArray(reviews) && reviews.length) {
+                            el.innerHTML = '';
+                            reviews.forEach((review, i) => el.appendChild(buildReviewCard(review, i)));
+                        }
+                    });
+                })
+                .catch(() => {
+                    // content/home.json missing or unreachable — the static HTML above stands as-is.
+                });
+        })();
+
         // Mobile Hamburger Menu
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
