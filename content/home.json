@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "badge": "📍 Mobile Detailing · Raleigh, Durham & Cary",
+    "headline": "Luxury Mobile Detailing at Your Doorstep",
+    "subhead": "We Bring Showroom-Quality Shine to Your Driveway",
+    "paragraph": "Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas."
+  },
+  "bookingBanner": {
+    "text": "Book With Us Today"
+  },
+  "packages": {
+    "package1": {
+      "badge": "Entry Level",
+      "name": "Essential Detail",
+      "description": "Perfect for regular maintenance and keeping your car fresh.",
+      "price": "$149+",
+      "priceNote": "Coupes/Sedans $149<br>2-Row SUV/Trucks $179<br>3-Row SUV/Trucks $199",
+      "features": [
+        "Hand wash & dry",
+        "Wheel & Tires",
+        "Tire Shine",
+        "Windows/ Mirrors",
+        "Light Vacuuming",
+        "Interior Wipe Down",
+        "1-2 hours"
+      ],
+      "calLink": "a1detailer/essential-detail"
+    },
+    "package2": {
+      "badge": "Most Popular",
+      "name": "Complete Detail",
+      "description": "Our most popular choice for thorough cleaning and protection.",
+      "price": "$199+",
+      "priceNote": "Coupes/Sedans $199<br>2-Row SUV/Trucks $249<br>3-Row SUV/Trucks $299",
+      "features": [
+        "Everything in Essential",
+        "Thorough Vacuuming",
+        "Interior Panels, Consoles, Dash, Vents",
+        "De Bug",
+        "Door Jambs",
+        "Light Stain Removal",
+        "Spray Wax",
+        "2-3 hours"
+      ],
+      "calLink": "a1detailer/complete-detail"
+    },
+    "package3": {
+      "badge": "Premium",
+      "name": "Elite Protection",
+      "description": "The ultimate in car care with advanced protection coatings.",
+      "price": "$299+",
+      "priceNote": "Coupes/Sedans $299<br>2-Row SUV/Trucks $349<br>3-Row SUV/Trucks $399",
+      "features": [
+        "Everything in Complete",
+        "Elite Tire Gel",
+        "Interior Panel Shine",
+        "Leather Conditioning",
+        "Ceramic Spray Wax",
+        "Engine Bay Detail",
+        "Carpet Shampoo",
+        "3-5 hours"
+      ],
+      "calLink": "a1detailer/elite-protection"
+    }
+  },
+  "whyChoose": {
+    "eyebrow": "What Sets Us Apart",
+    "heading": "The A1 Detailing Difference",
+    "subtext": "Three reasons Raleigh, Durham & Cary trust us with their vehicles",
+    "benefit1": {
+      "title": "Convenience You Can Count On",
+      "text": "We come to your home or workplace and bring everything with us — our own water tanks, generators, and every tool needed. No need to drive anywhere, and no need to provide electricity or water."
+    },
+    "benefit2": {
+      "title": "Quality You Can See",
+      "text": "We use only the highest-quality detailing products and professional-grade equipment, applied by trained technicians who handle every vehicle with precision, care, and expertise."
+    },
+    "benefit3": {
+      "title": "Trust & Transparency",
+      "text": "Highly rated by our customers for reliability and outstanding results, with clear, upfront pricing and no hidden fees — you know exactly what to expect before booking."
+    }
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "subtext": "Simple steps to get your car looking brand new",
+    "step1": {
+      "title": "Book Appointment",
+      "text": "Select your date, time, and preferred service package through our calendar. Choose what works best for you."
+    },
+    "step2": {
+      "title": "Confirm Details",
+      "text": "Provide your vehicle details and service location. We'll confirm all the details to ensure perfect service."
+    },
+    "step3": {
+      "title": "We Arrive Ready",
+      "text": "Our team arrives at your location fully equipped. We bring everything needed—no prep work required from you."
+    },
+    "step4": {
+      "title": "Enjoy Results",
+      "text": "Sit back and relax while we transform your vehicle. When we're done, your car will look absolutely stunning."
+    }
+  },
+  "gallery": {
+    "eyebrow": "Recent Work",
+    "heading": "See The Transformation",
+    "subtext": "A few before & afters from vehicles we've detailed around Raleigh, Durham & Cary",
+    "image1": { "src": "media/after1.jpeg", "alt": "A1 Detailing before and after result 1" },
+    "image2": { "src": "media/after2.jpeg", "alt": "A1 Detailing before and after result 2" },
+    "image3": { "src": "media/after3.jpeg", "alt": "A1 Detailing before and after result 3" },
+    "image4": { "src": "media/after4.jpeg", "alt": "A1 Detailing before and after result 4" }
+  },
+  "reviews": {
+    "heading": "What Our Clients Say",
+    "subtext": "Real reviews from satisfied customers",
+    "list": [
+      {
+        "stars": 5,
+        "text": "\"Best detailing! A1 was reliable, thorough, and fast. I didn't even have to leave my house! 10/10 recommend. Will use them every time!\"",
+        "name": "Eve Wayman",
+        "source": "Google Review"
+      },
+      {
+        "stars": 5,
+        "text": "\"Always pleasant and on time with outstanding work. My car always looks and smells brand new! Highly recommend. Right in your own driveway!\"",
+        "name": "Terri Phillips Bonner",
+        "source": "Google Review"
+      },
+      {
+        "stars": 5,
+        "text": "\"Professional, efficient, and detail-oriented. They went above and beyond with my vehicle. Definitely booking again!\"",
+        "name": "Customer Satisfied",
+        "source": "Google Review"
+      }
+    ]
+  },
+  "contact": {
+    "phone": "919-332-1936",
+    "serviceAreas": "Service Areas: Raleigh, Durham, Cary, Apex, Wake Forest and surrounding areas.",
+    "footerBlurb": "Professional mobile detailing serving Raleigh, Durham, Cary, Apex, Wake Forest, and surrounding areas. We bring luxury detailing to your doorstep.",
+    "instagramUrl": "https://instagram.com/a1autodetailer",
+    "copyrightText": "© 2026 A1 Auto Detailing. All rights reserved. | Premium Mobile Detailing Services"
+  }
+}

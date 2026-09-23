@@ -1,0 +1,184 @@
+backend:
+  name: github
+  repo: A1Detailer/website
+  branch: main
+  base_url: https://REPLACE-WITH-YOUR-WORKER-URL.workers.dev
+  auth_endpoint: auth
+
+media_folder: "media"
+public_folder: "media"
+
+collections:
+  - name: "home"
+    label: "Home Page"
+    files:
+      - file: "content/home.json"
+        label: "Home Page Content"
+        name: "home"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subheadline", name: "subhead", widget: "string" }
+              - { label: "Paragraph", name: "paragraph", widget: "text" }
+
+          - label: "Booking Banner"
+            name: "bookingBanner"
+            widget: "object"
+            fields:
+              - { label: "Banner Text", name: "text", widget: "string" }
+
+          - label: "Packages"
+            name: "packages"
+            widget: "object"
+            fields:
+              - label: "Essential Detail (Package 1)"
+                name: "package1"
+                widget: "object"
+                fields:
+                  - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Starting Price (e.g. $149+)", name: "price", widget: "string" }
+                  - { label: "Price Breakdown (HTML, use <br> for line breaks)", name: "priceNote", widget: "text" }
+                  - { label: "Features", name: "features", widget: "list" }
+                  - { label: "Cal.com Booking Link (e.g. a1detailer/essential-detail)", name: "calLink", widget: "string" }
+              - label: "Complete Detail (Package 2)"
+                name: "package2"
+                widget: "object"
+                fields:
+                  - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Starting Price (e.g. $199+)", name: "price", widget: "string" }
+                  - { label: "Price Breakdown (HTML, use <br> for line breaks)", name: "priceNote", widget: "text" }
+                  - { label: "Features", name: "features", widget: "list" }
+                  - { label: "Cal.com Booking Link (e.g. a1detailer/complete-detail)", name: "calLink", widget: "string" }
+              - label: "Elite Protection (Package 3)"
+                name: "package3"
+                widget: "object"
+                fields:
+                  - { label: "Badge", name: "badge", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Starting Price (e.g. $299+)", name: "price", widget: "string" }
+                  - { label: "Price Breakdown (HTML, use <br> for line breaks)", name: "priceNote", widget: "text" }
+                  - { label: "Features", name: "features", widget: "list" }
+                  - { label: "Cal.com Booking Link (e.g. a1detailer/elite-protection)", name: "calLink", widget: "string" }
+
+          - label: "Why Choose Us"
+            name: "whyChoose"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - label: "Benefit 1"
+                name: "benefit1"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Benefit 2"
+                name: "benefit2"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Benefit 3"
+                name: "benefit3"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+
+          - label: "How It Works"
+            name: "howItWorks"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - label: "Step 1"
+                name: "step1"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Step 2"
+                name: "step2"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Step 3"
+                name: "step3"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+              - label: "Step 4"
+                name: "step4"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Text", name: "text", widget: "text" }
+
+          - label: "Gallery"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - label: "Image 1"
+                name: "image1"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Image 2"
+                name: "image2"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Image 3"
+                name: "image3"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Image 4"
+                name: "image4"
+                widget: "object"
+                fields:
+                  - { label: "Image", name: "src", widget: "image" }
+                  - { label: "Alt Text", name: "alt", widget: "string" }
+
+          - label: "Reviews"
+            name: "reviews"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              - label: "Review List"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Stars (1-5)", name: "stars", widget: "number", default: 5, min: 1, max: 5 }
+                  - { label: "Review Text", name: "text", widget: "text" }
+                  - { label: "Reviewer Name", name: "name", widget: "string" }
+                  - { label: "Source (e.g. Google Review)", name: "source", widget: "string" }
+
+          - label: "Contact & Footer"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone Number (e.g. 919-332-1936)", name: "phone", widget: "string" }
+              - { label: "Service Areas Text", name: "serviceAreas", widget: "string" }
+              - { label: "Footer Blurb", name: "footerBlurb", widget: "text" }
+              - { label: "Instagram URL", name: "instagramUrl", widget: "string" }
+              - { label: "Copyright Text", name: "copyrightText", widget: "string" }
