@@ -11,7 +11,7 @@
   "packages": {
     "package1": {
       "badge": "Entry Level",
-      "name": "Essential Detail",
+      "name": "Bronze Detail",
       "description": "Perfect for regular maintenance and keeping your car fresh.",
       "price": "$149+",
       "priceNote": "Coupes/Sedans $149<br>2-Row SUV/Trucks $179<br>3-Row SUV/Trucks $199",
@@ -28,14 +28,17 @@
     },
     "package2": {
       "badge": "Most Popular",
-      "name": "Complete Detail",
+      "name": "Silver Detail",
       "description": "Our most popular choice for thorough cleaning and protection.",
       "price": "$199+",
       "priceNote": "Coupes/Sedans $199<br>2-Row SUV/Trucks $249<br>3-Row SUV/Trucks $299",
       "features": [
-        "Everything in Essential",
+        "Everything in Bronze",
         "Thorough Vacuuming",
-        "Interior Panels, Consoles, Dash, Vents",
+        "Interior Panels",
+        "Consoles",
+        "Dash",
+        "Vents",
         "De Bug",
         "Door Jambs",
         "Light Stain Removal",
@@ -51,7 +54,7 @@
       "price": "$299+",
       "priceNote": "Coupes/Sedans $299<br>2-Row SUV/Trucks $349<br>3-Row SUV/Trucks $399",
       "features": [
-        "Everything in Complete",
+        "Everything in Silver",
         "Elite Tire Gel",
         "Interior Panel Shine",
         "Leather Conditioning",
@@ -104,10 +107,22 @@
     "eyebrow": "Recent Work",
     "heading": "See The Transformation",
     "subtext": "A few before & afters from vehicles we've detailed around Raleigh, Durham & Cary",
-    "image1": { "src": "media/after1.jpeg", "alt": "A1 Detailing before and after result 1" },
-    "image2": { "src": "media/after2.jpeg", "alt": "A1 Detailing before and after result 2" },
-    "image3": { "src": "media/after3.jpeg", "alt": "A1 Detailing before and after result 3" },
-    "image4": { "src": "media/after4.jpeg", "alt": "A1 Detailing before and after result 4" }
+    "image1": {
+      "src": "media/after1.jpeg",
+      "alt": "A1 Detailing before and after result 1"
+    },
+    "image2": {
+      "src": "media/after2.jpeg",
+      "alt": "A1 Detailing before and after result 2"
+    },
+    "image3": {
+      "src": "media/after3.jpeg",
+      "alt": "A1 Detailing before and after result 3"
+    },
+    "image4": {
+      "src": "media/after4.jpeg",
+      "alt": "A1 Detailing before and after result 4"
+    }
   },
   "reviews": {
     "heading": "What Our Clients Say",
