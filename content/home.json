@@ -1,24 +1,33 @@
 {
-  "hero": {
-    "badge": "📍 Mobile Detailing · Raleigh, Durham & Cary",
-    "headline": "Luxury Mobile Detailing at Your Doorstep",
-    "subhead": "We Bring Showroom-Quality Shine to Your Driveway",
-    "paragraph": "Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas."
-  },
-  "heroSlider": {
-    "pairs": [
-      {
-        "before": { "src": "media/after4.jpeg", "alt": "Before detailing" },
-        "after": { "src": "media/after3.jpeg", "alt": "After detailing" }
-      },
-      {
-        "before": { "src": "media/after1.jpeg", "alt": "Before detailing" },
-        "after": { "src": "media/after2.jpeg", "alt": "After detailing" }
-      }
-    ]
+  "contact": {
+    "phone": "919-332-1936",
+    "serviceAreas": "Service Areas: Raleigh, Durham, Cary, Apex, Wake Forest and surrounding areas.",
+    "footerBlurb": "Professional mobile detailing serving Raleigh, Durham, Cary, Apex, Wake Forest, and surrounding areas. We bring luxury detailing to your doorstep.",
+    "instagramUrl": "https://instagram.com/a1autodetailer",
+    "copyrightText": "© 2026 A1 Auto Detailing. All rights reserved. | Premium Mobile Detailing Services"
   },
   "bookingBanner": {
     "text": "Book With Us Today"
+  },
+  "howItWorks": {
+    "heading": "How It Works",
+    "subtext": "Simple steps to get your car looking brand new",
+    "step1": {
+      "title": "Book Appointment",
+      "text": "Select your date, time, and preferred service package through our calendar. Choose what works best for you."
+    },
+    "step2": {
+      "title": "Confirm Details",
+      "text": "Provide your vehicle details and service location. We'll confirm all the details to ensure perfect service."
+    },
+    "step3": {
+      "title": "We Arrive Ready",
+      "text": "Our team arrives at your location fully equipped. We bring everything needed—no prep work required from you."
+    },
+    "step4": {
+      "title": "Enjoy Results",
+      "text": "Sit back and relax while we transform your vehicle. When we're done, your car will look absolutely stunning."
+    }
   },
   "packages": {
     "package1": {
@@ -78,43 +87,6 @@
       "calLink": "a1detailer/elite-protection"
     }
   },
-  "whyChoose": {
-    "eyebrow": "What Sets Us Apart",
-    "heading": "The A1 Detailing Difference",
-    "subtext": "Three reasons Raleigh, Durham & Cary trust us with their vehicles",
-    "benefit1": {
-      "title": "Convenience You Can Count On",
-      "text": "We come to your home or workplace and bring everything with us — our own water tanks, generators, and every tool needed. No need to drive anywhere, and no need to provide electricity or water."
-    },
-    "benefit2": {
-      "title": "Quality You Can See",
-      "text": "We use only the highest-quality detailing products and professional-grade equipment, applied by trained technicians who handle every vehicle with precision, care, and expertise."
-    },
-    "benefit3": {
-      "title": "Trust & Transparency",
-      "text": "Highly rated by our customers for reliability and outstanding results, with clear, upfront pricing and no hidden fees — you know exactly what to expect before booking."
-    }
-  },
-  "howItWorks": {
-    "heading": "How It Works",
-    "subtext": "Simple steps to get your car looking brand new",
-    "step1": {
-      "title": "Book Appointment",
-      "text": "Select your date, time, and preferred service package through our calendar. Choose what works best for you."
-    },
-    "step2": {
-      "title": "Confirm Details",
-      "text": "Provide your vehicle details and service location. We'll confirm all the details to ensure perfect service."
-    },
-    "step3": {
-      "title": "We Arrive Ready",
-      "text": "Our team arrives at your location fully equipped. We bring everything needed—no prep work required from you."
-    },
-    "step4": {
-      "title": "Enjoy Results",
-      "text": "Sit back and relax while we transform your vehicle. When we're done, your car will look absolutely stunning."
-    }
-  },
   "gallery": {
     "eyebrow": "Recent Work",
     "heading": "See The Transformation",
@@ -135,6 +107,12 @@
       "src": "media/after4.jpeg",
       "alt": "A1 Detailing before and after result 4"
     }
+  },
+  "hero": {
+    "badge": "📍 Mobile Detailing · Raleigh, Durham & Cary",
+    "headline": "Luxury Mobile Detailing at Your Doorstep",
+    "subhead": "We Bring Showroom-Quality Shine to Your Driveway",
+    "paragraph": "Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas."
   },
   "reviews": {
     "heading": "What Our Clients Say",
@@ -160,11 +138,45 @@
       }
     ]
   },
-  "contact": {
-    "phone": "919-332-1936",
-    "serviceAreas": "Service Areas: Raleigh, Durham, Cary, Apex, Wake Forest and surrounding areas.",
-    "footerBlurb": "Professional mobile detailing serving Raleigh, Durham, Cary, Apex, Wake Forest, and surrounding areas. We bring luxury detailing to your doorstep.",
-    "instagramUrl": "https://instagram.com/a1autodetailer",
-    "copyrightText": "© 2026 A1 Auto Detailing. All rights reserved. | Premium Mobile Detailing Services"
+  "heroSlider": {
+    "pairs": [
+      {
+        "before": {
+          "src": "media/after1.jpeg",
+          "alt": "Before detailing"
+        },
+        "after": {
+          "src": "media/after2.jpeg",
+          "alt": "After detailing"
+        }
+      },
+      {
+        "before": {
+          "src": "media/after1.jpeg",
+          "alt": "Before detailing"
+        },
+        "after": {
+          "src": "media/after2.jpeg",
+          "alt": "After detailing"
+        }
+      }
+    ]
+  },
+  "whyChoose": {
+    "eyebrow": "What Sets Us Apart",
+    "heading": "The A1 Detailing Difference",
+    "subtext": "Three reasons Raleigh, Durham & Cary trust us with their vehicles",
+    "benefit1": {
+      "title": "Convenience You Can Count On",
+      "text": "We come to your home or workplace and bring everything with us — our own water tanks, generators, and every tool needed. No need to drive anywhere, and no need to provide electricity or water."
+    },
+    "benefit2": {
+      "title": "Quality You Can See",
+      "text": "We use only the highest-quality detailing products and professional-grade equipment, applied by trained technicians who handle every vehicle with precision, care, and expertise."
+    },
+    "benefit3": {
+      "title": "Trust & Transparency",
+      "text": "Highly rated by our customers for reliability and outstanding results, with clear, upfront pricing and no hidden fees — you know exactly what to expect before booking."
+    }
   }
 }
