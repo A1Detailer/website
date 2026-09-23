@@ -5,6 +5,18 @@
     "subhead": "We Bring Showroom-Quality Shine to Your Driveway",
     "paragraph": "Professional auto detailing that transforms your vehicle without leaving home. Serving Raleigh, Durham, Cary, and surrounding areas."
   },
+  "heroSlider": {
+    "pairs": [
+      {
+        "before": { "src": "media/after4.jpeg", "alt": "Before detailing" },
+        "after": { "src": "media/after3.jpeg", "alt": "After detailing" }
+      },
+      {
+        "before": { "src": "media/after1.jpeg", "alt": "Before detailing" },
+        "after": { "src": "media/after2.jpeg", "alt": "After detailing" }
+      }
+    ]
+  },
   "bookingBanner": {
     "text": "Book With Us Today"
   },

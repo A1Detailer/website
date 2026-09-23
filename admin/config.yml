@@ -25,6 +25,28 @@ collections:
               - { label: "Subheadline", name: "subhead", widget: "string" }
               - { label: "Paragraph", name: "paragraph", widget: "text" }
 
+          - label: "Hero Before/After Slider"
+            name: "heroSlider"
+            widget: "object"
+            hint: "Rotates through these pairs automatically. Add or remove pairs freely — the slider adjusts to however many you give it. Before should always be the pre-detail photo, After the post-detail photo."
+            fields:
+              - label: "Pairs"
+                name: "pairs"
+                widget: "list"
+                fields:
+                  - label: "Before"
+                    name: "before"
+                    widget: "object"
+                    fields:
+                      - { label: "Image", name: "src", widget: "image" }
+                      - { label: "Alt Text", name: "alt", widget: "string", default: "Before detailing" }
+                  - label: "After"
+                    name: "after"
+                    widget: "object"
+                    fields:
+                      - { label: "Image", name: "src", widget: "image" }
+                      - { label: "Alt Text", name: "alt", widget: "string", default: "After detailing" }
+
           - label: "Booking Banner"
             name: "bookingBanner"
             widget: "object"

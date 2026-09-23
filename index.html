@@ -1636,9 +1636,9 @@
             </div>
 
             <!-- Before/After Slider Carousel -->
-            <div class="before-after-container slide-in-right" id="sliderContainer">
-                <img src="media/after4.jpeg" alt="Before detailing - dirty car" class="before-image">
-                <img src="media/after3.jpeg" alt="After detailing - shiny clean car" class="after-image">
+            <div class="before-after-container slide-in-right" id="sliderContainer" data-cms-slider="heroSlider.pairs">
+                <img src="media/after4.jpeg" alt="Before detailing - dirty car" class="before-image" data-cms-src="heroSlider.pairs.0.before.src" data-cms-alt="heroSlider.pairs.0.before.alt">
+                <img src="media/after3.jpeg" alt="After detailing - shiny clean car" class="after-image" data-cms-src="heroSlider.pairs.0.after.src" data-cms-alt="heroSlider.pairs.0.after.alt">
                 <div class="slider-shimmer"></div>
                 <div class="slider-handle">
                     <div class="slider-arrow"></div>
@@ -1986,7 +1986,7 @@
                 return card;
             }
 
-            fetch('content/home.json')
+            fetch('content/home.json', { cache: 'no-store' })
                 .then(res => (res.ok ? res.json() : Promise.reject(res.status)))
                 .then(data => {
                     document.querySelectorAll('[data-cms]').forEach(el => {
@@ -2048,6 +2048,19 @@
                             reviews.forEach((review, i) => el.appendChild(buildReviewCard(review, i)));
                         }
                     });
+
+                    // Hands the CMS-edited before/after pairs to the carousel in the
+                    // second script block below, which reads window.__heroSliderPairs
+                    // each time it rotates (see getImagePairs() there).
+                    document.querySelectorAll('[data-cms-slider]').forEach(el => {
+                        const pairs = getPath(data, el.getAttribute('data-cms-slider'));
+                        if (Array.isArray(pairs) && pairs.length) {
+                            const cleaned = pairs
+                                .map(p => ({ before: p.before && p.before.src, after: p.after && p.after.src }))
+                                .filter(p => p.before && p.after);
+                            if (cleaned.length) window.__heroSliderPairs = cleaned;
+                        }
+                    });
                 })
                 .catch(() => {
                     // content/home.json missing or unreachable — the static HTML above stands as-is.
@@ -2080,8 +2093,10 @@
         const shimmer = container.querySelector('.slider-shimmer');
         let isActive = false;
         
-        // Array of before/after image pairs
-        const imagePairs = [
+        // Default before/after image pairs, used until/unless content/home.json's
+        // heroSlider.pairs loads (see the data-cms-slider handler above, which sets
+        // window.__heroSliderPairs).
+        const defaultImagePairs = [
             {
                 before: 'media/after4.jpeg',
                 after: 'media/after3.jpeg'
@@ -2089,13 +2104,15 @@
             {
                 before: 'media/after1.jpeg',
                 after: 'media/after2.jpeg'
-            },
-            {
-                before: 'media/after4.jpeg',
-                after: 'media/after3.jpeg'
             }
         ];
-        
+
+        function getImagePairs() {
+            return (window.__heroSliderPairs && window.__heroSliderPairs.length)
+                ? window.__heroSliderPairs
+                : defaultImagePairs;
+        }
+
         let currentPairIndex = 0;
         let carouselTimeout;
         const ANIMATION_DURATION = 8000; // must match the 8s autoReveal/handleSlide/arrowPulse CSS animations,
@@ -2121,8 +2138,9 @@
         
         function switchToNextImage() {
             // Move to next image pair
-            currentPairIndex = (currentPairIndex + 1) % imagePairs.length;
-            const pair = imagePairs[currentPairIndex];
+            const pairs = getImagePairs();
+            currentPairIndex = (currentPairIndex + 1) % pairs.length;
+            const pair = pairs[currentPairIndex];
             
             // Switch images
             beforeImage.src = pair.before;
