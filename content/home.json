@@ -100,12 +100,12 @@
       "alt": "A1 Detailing before and after result 2"
     },
     "image3": {
-      "src": "media/after3.jpeg",
-      "alt": "A1 Detailing before and after result 3"
+      "src": "media/bmw.jpeg",
+      "alt": "Detailed BMW red leather interior"
     },
     "image4": {
-      "src": "media/after4.jpeg",
-      "alt": "A1 Detailing before and after result 4"
+      "src": "media/work-1.png",
+      "alt": "A1 technician hand washing a Mercedes-AMG"
     }
   },
   "hero": {
@@ -142,17 +142,17 @@
     "pairs": [
       {
         "before": {
-          "src": "media/after1.jpeg",
+          "src": "media/before1.jpeg",
           "alt": "Before detailing"
         },
         "after": {
-          "src": "media/after2.jpeg",
+          "src": "media/after1.jpeg",
           "alt": "After detailing"
         }
       },
       {
         "before": {
-          "src": "media/after1.jpeg",
+          "src": "media/before2.jpeg",
           "alt": "Before detailing"
         },
         "after": {
