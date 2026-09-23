@@ -11,7 +11,7 @@
   "packages": {
     "package1": {
       "badge": "Entry Level",
-      "name": "Bronze Detail",
+      "name": "Bronze Package",
       "description": "Perfect for regular maintenance and keeping your car fresh.",
       "price": "$149+",
       "priceNote": "Coupes/Sedans $149<br>2-Row SUV/Trucks $179<br>3-Row SUV/Trucks $199",
@@ -28,7 +28,7 @@
     },
     "package2": {
       "badge": "Most Popular",
-      "name": "Silver Detail",
+      "name": "Silver Package",
       "description": "Our most popular choice for thorough cleaning and protection.",
       "price": "$199+",
       "priceNote": "Coupes/Sedans $199<br>2-Row SUV/Trucks $249<br>3-Row SUV/Trucks $299",
@@ -49,7 +49,7 @@
     },
     "package3": {
       "badge": "Premium",
-      "name": "Elite Protection",
+      "name": "Elite Package",
       "description": "The ultimate in car care with advanced protection coatings.",
       "price": "$299+",
       "priceNote": "Coupes/Sedans $299<br>2-Row SUV/Trucks $349<br>3-Row SUV/Trucks $399",
